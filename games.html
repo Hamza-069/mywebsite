@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <link rel="icon" type="pfp.png" href="pfp.png">
+    </head>
+    <body>
+        <a href="index.html">
+            <button style="font-size: 20px; border-radius: 5px;">Home page</button>
+        </a>
+        <h1><b>I can guess the number Your thinking of</b></h1>
+        <p>Think of a number between 1 and 100</p>
+        <form>
+            <label>write the <b>Number</b> Here (to remember) </label>
+            <input type="number" name="number" id="number" required>
+            <br>
+            <input type="submit" value="Submit" style="font-size: 20px;" onclick="guess(event)">
+            <script> 
+               function guess(event) {
+                   event.preventDefault(); // Prevent form submission
+                   var number = document.getElementById("number").value;
+                   if (number) {
+                       alert("I think you were thinking of " + number);
+                   }
+               } 
+            </script>
+        </form>
+        <div style="text-align: center;">
+            <img src="pfp.png" alt="pfp" style="display: block; margin: 0 auto;">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>You know</title>
+        <link rel="icon" type="pfp.png" href="pfp.png">
+    </head>
+    <body style="background-image: url('unnamed.png'); background-size: cover; background-repeat: no-repeat;">
+        <h1 style="text-align: center ; color: azure;">You know What</h1>
+        <p style="text-align: center ; color: azure">This is my first website.</p>
+        <div style="text-align: center;">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click here</a>
+            <br> <br>
+            <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw">Click here for more info</a>
+        </div>
+        <br>
+        <div style="text-align: center;">
+        <a href="games.html"style="text-align: center ;">
+            <button style="font-size: 20px; border-radius: 5px; text-align: center;">My Game</button>
+        </a>
+        <br>
+        <br>
+        <a href= "game2.html" style="text-align: center ;">
+            <button style="font-size: 20px; border-radius: 5px; text-align: center;">Game by Chatgpt</button>
+        </a>
+        <br>
+        <br>
+        <a href= "game3.html" style="text-align: center ;">
+            <button style="font-size: 20px; border-radius: 5px; text-align: center;">Game 2 by Chatgpt</button>
+        </a>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <p style="text-align: center ; color: azure">This website/games made by </p>
+        <div>
+        <p id="colorText" style="display:inline; background-color:black; text-align: center;;">Hamza. A</p>
+        </div>
+        <hr>
+        <script>
+            function changeColor() {
+            const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+            document.getElementById('colorText').style.color = randomColor;
+            }
+            setInterval(changeColor, 100);
+        </script>
+    </body>
+</html>
